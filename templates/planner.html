@@ -1,0 +1,397 @@
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"> </script> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
+<section class="flex center banner">
+    <header class="flex">
+      <nav class="options">
+        <a style = 'color: white; font-size: 1.25em;' class="link" href="/home">All About US</a>
+       <a  style = 'color: white; font-size: 1.25em;' class="link" href="/algo">Airport Ticket Ratings</a>
+        <a  style = 'color: white; font-size: 1.25em;' class = "link" href = "/planner">Trip Planner</a>
+        <a style = 'color: white; font-size: 1.25em;' class = "link" href = "/forum"> Forum </a>
+
+        <a  style = 'color: white; font-size: 1.25em; margin-left: 7.5%;' class = "link" href = "/logout"> Logout </a>
+      </nav>
+      </header>
+
+<style>
+  :root {
+  --primary: #000;
+  --secondary: #FDBD01;
+  --secondary-dark: rgb(200, 145, 0);
+}
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background: rgb(42,42,42);
+  font-family: 'Comfortaa', cursive;
+  color: #fff;
+  scroll-behavior: scroll;
+}
+
+section.banner {
+  background: linear-gradient(to bottom, transparent, var(--primary), var(--primary)), url("main-bg.jpg") no-repeat;
+  background-size: auto calc(100vw);
+  background-attachment: fixed;
+  min-height: 50vw;
+  text-align: center;
+  flex-direction: column;
+}
+section.banner h1 {
+  word-break: break-word;
+  font-size: 4em;
+  margin: 20vh 0 0.5em 0;
+  text-shadow: 0 0 0.5em var(--secondary);
+  color: var(--secondary);
+}
+section.banner > div {
+  max-width: 60%;
+  flex-direction: column;
+}
+section.banner > div p {
+  font-size: 1.1em;
+  margin: 0 0 2em 0;
+}
+
+header {
+  width: 100%;
+  flex-direction: column;
+}
+header nav.options {
+  padding: 1em;
+  text-align: center;
+}
+header nav.options a {
+  margin: 0.5em;
+  font-size: 1.1em;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+a.link {
+  display: inline-block;
+  font-family: 'Comfortaa', cursive;
+}
+a.link::after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateY(0.5em) translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: var(--secondary);
+    transition: width 0.3s ease;
+}
+a.link:hover::after  {
+    width: 100%;
+}
+
+h1.glow {
+  text-shadow: 0 0 1em #fff,
+         0 0 1em #fff;
+}
+</style>
+
+ <!--
+
+   Q's for User:
+  where are they going (Region, country, continent)
+  how long is their trip
+  how many people are going with them on the trip
+  purpose of the trip (tourism, family, etc)
+  flight airline they are using (for going and coming)
+  price range
+  -->
+ <body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"> </script> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
+<h2 style = " font-family: 'Comfortaa', cursive; color: #FDBD01;">Plan your Vacation</h2><br>
+
+<form class="p-3" method = "POST" action = "/planned_trip">
+<div class = "totalquestions">
+<div class = "first-seven">
+ <div class="form-group">
+      <label style = "color: #FDBD01;" for="name">Where are you traveling to? (Region, Country, Continent) <br> E.g Milan, Italy, Europe</label>
+      <input onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)" style="background-color: rgb(32,32,32); color: #ffe5b4;" type="text" class="form-control" id="place" placeholder="Enter your destination." name = "place">
+    </div>
+
+  <div class = "form-group">
+      <label style = "color: #FDBD01;" for="otherField"> What is the start date of your trip? (Month/Day/Year) <br> E.g. 6/15/2020</label>
+      <input  onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)"  style="background-color: rgb(32,32,32); color: #ffe5b4;" type="text" class="form-control" id="start" placeholder="Enter the start date of your trip." name = "start">
+    </div>
+
+    <div class = "form-group">
+      <label style = "color: #FDBD01;" for="otherField"> What is the end date of your trip? (Month/Day/Year) <br> E.g. 6/25/2020</label>
+      <input onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)"   style="background-color: rgb(32,32,32); color: #ffe5b4;" type="text" class="form-control" id="end" placeholder="Enter the end date of your trip." name = "end">
+    </div>
+
+      <div class="form-group">
+      <label style = "color: #FDBD01;" for="seeAnotherField"> How many people are going on the trip? </label>
+      <input  onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)" 
+      style="background-color: rgb(32,32,32); color: #ffe5b4;" type="number" class="form-control" 
+      id="num_people" placeholder="Enter the number of people traveling." name = "num_people" min = "1">
+    <!--
+    <select class="form-control" id="seeAnotherFieldGroup" name = "num_people">
+      <option value="0">0</option>
+        <option value="1">1 - 3</option>
+        <option value="0">3 - 5</option>
+        <option value="0">5 - 7</option>
+        <option value="yes">7 - 10</option>
+        <option value="yes">More than 10</option>
+      </select> -->
+    </div>
+
+     <div class="form-group" id="otherFieldGroupDiv">
+    <div class="row">
+      <div class="col-6">
+        <label style = "color: #FDBD01;" for="otherField1">What is the average age of the people who are traveling? (Just Number) <br> E.g. 35</label>
+          <input  onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)"  style="background-color: rgb(32,32,32); color: #ffe5b4;" type="text" class="form-control w-100" id="otherField1" placeholder="Enter the average age of the people traveling." name = "average">
+      </div>
+      <div class="col-6" id = "popup1">
+        <label style = "color: #FDBD01;" for="otherField2">What is your relationship with the people traveling?</label>
+      <select  style="background-color: rgb(32,32,32); color: #ffe5b4;" onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)" class="form-control" id="otherField2" name = "relationship">
+        <option>Direct Family Member</option>
+          <option>Immediate Family Member</option>
+          <option>Distant Family Member</option>
+          <option>Close Friend</option>
+          <option>Stranger</option>
+        </select> 
+      </div>
+    </div>
+  </div>
+  
+    <div class = "form-group" >
+      <label style = "color: #FDBD01;" for="otherField"> What is the purpose of your trip? <br> E.g. Tourism, Family</label>
+      <select onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)"  style="background-color: rgb(32,32,32); "class="form-control" id="" name = "purpose">
+      <option >Tourism</option>
+        <option >Family Event</option>
+        <option >Business</option>
+        <option >Relaxation</option>
+        <option >Spend Time with Friends</option>
+      </select>
+    </div>
+
+
+    <div class = "form-group">
+      <label style = "color: #FDBD01;" for="otherField">What kind of living accommodations will you be using? <br> E.g. Hotels</label>
+      <select  onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)" style="background-color: rgb(32,32,32); "class="form-control" id="room" name = "room">
+      <option >Hotels</option>
+        <option >Air B&B</option>
+        <option >Family Member House</option>
+        <option >Car</option>
+        <option >House</option>
+      </select>
+    </div>
+
+   <div class = "form-group">
+      <label style = "color: #FDBD01;" name = "sport_div" for = "otherField">What kinds of things are you planning to do on this trip? Select all that apply.</label> <br>
+      <input  onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)"  style="background-color: rgb(32,32,32); color: #ffe5b4;" type="checkbox" id="attractions1" name="attractions1" value="City Tours">
+      <label style = "color: #FDBD01;"  for="attractions1">City Tours</label><br>
+      <input  onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)"  style="background-color: rgb(32,32,32); color: #ffe5b4;" type="checkbox" id="attractions2" name="attractions2" value="Sports Game">
+      <label style = "color: #FDBD01;" for="attractions2">Sports Game</label><br>
+      <input  onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)"  style="background-color: rgb(32,32,32); color: #ffe5b4;" type="checkbox" id="attractions3" name="attractions3" value="Sight-Seeing">
+      <label  style = "color: #FDBD01;" for="attractions3">Sight-Seeing</label><br>
+      <input  onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)"  style="background-color: rgb(32,32,32); color: #ffe5b4;" type="checkbox" id="attractions4" name="attractions4" value="Visit Friends">
+      <label  style = "color: #FDBD01;" for="attractions3">Visit Friends</label><br>
+    </div>
+
+    <div class = "form-group">
+      <label  style = "color: #FDBD01;" for = "otherField"> When will the activity occur? (Month-Day-Year) If you chose multiple, separate them using commas. (The first date corresponds with the first activity you chose.) <br> E.g 6-21-2020, 6-22-2020 </label>
+      <input  onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)"  style="background-color: rgb(32,32,32); color: #ffe5b4;" type = "text" class = "form-control" id = "game_location" placeholder = "Enter the event date(s)." name = "game_location">
+    </div>
+  </div>
+
+
+
+  
+  <div class = "secondbatch">
+<div class = "form-group" id = "custom">
+      <label  style = "color: #FDBD01;" for="otherField">What would you like to do on a city tour (if you chose to do one)? </label>
+      <select  onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)" style="background-color: rgb(32,32,32); " class="form-control" id="custom" name = "custom">
+        <option >All</option>
+        <option >Architecture</option>
+        <option >Art </option>
+        <option >Food </option>
+        <option >Family</option>
+        <option >History</option>
+        <option >Orientation</option>
+        <option >Jewish Heritage</option>
+        <option >Excursions</option>
+        <option >Custom</option>
+        <option >Vatican</option>
+        <option >Colossuem</option>
+        <option >Cruise Experiences</option>
+        <option >Private Guides</option>
+        <option> None </option>
+      </select>
+    </div>
+  
+    <div class = "form-group" id = "sport_div">
+      <label  style = "color: #FDBD01;" for = "otherField" > What sports game do you want to attend (if you chose to watch one)?<br>E.g. Basketball</label>
+      <input onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)"  style="background-color: rgb(32,32,32); color: #ffe5b4;"  type = "text" class = "form-control" id = "game_type" placeholder="Enter the sport you want to watch." name = "game_type">
+    </div>
+    <div class = "form-group">
+      <label  style = "color: #FDBD01;" for = "otherField"> What would you like to view when sight-seeing?  </label>
+      <select  onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)" style="background-color: rgb(32,32,32); " class="form-control" id="sightsee" name = "sightsee">
+        <option> All Options </option>
+        <option> General Sight-Seeing Tours</option>
+        <option> Culture and History </option>
+        <option> Nature and Adventure </option>
+        <option> Wheelchair Accessible Activities </option>
+      </select>
+    </div>
+    <div class = "form-group">
+      <label style = "color: #FDBD01;" for = "otherField"> Where would you like to sightsee? (City) <br> eg. Milan</label>
+      <input  style="background-color: rgb(32,32,32); color: #ffe5b4;" type = "text" class = "form-control" id = "location_sightsee" placeholder="Enter the city where you would like to sightsee." name = "location_sightsee">
+    </div>
+
+     <div class="form-group">
+        <label style = "color: #FDBD01;" for="seeAnotherFieldGroup"> Write the locations you will be at during your trip and when you will be at them. <br> Don't overlap dates in your response. (City, Month/Date/Year - Month/Date/Year) <br> E.g. Milan, 6/15/2020 - 6/21/2020, Rome, 6/22/2020 - 6/23/2020</label>
+      <input  onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)"  style="background-color: rgb(32,32,32); color: #ffe5b4;" type="text" class="form-control" id="part 1" placeholder="Enter your basic trip outline." name = "first_part">
+      <div class = "form-group">
+      <label style = "color: #FDBD01;" for="seeAnotherFieldGroup"> What medium will you use to travel between cities? Select all that apply. <br></label>
+     <br> <input  onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)"  style="background-color: rgb(32,32,32); color: #ffe5b4;" type="checkbox" id="medium1" name="medium1" value="Trains">
+      <label style = "color: #FDBD01;"  for="medium1">Trains</label><br>
+      <!--
+      <input  onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)"  style="background-color: rgb(32,32,32); color: #ffe5b4;" type="checkbox" id="medium2" name="medium2" value="Subways"> 
+      <label style = "color: #FDBD01;" for="medium2">Subways</label><br>-->
+      <input  onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)"  style="background-color: rgb(32,32,32); color: #ffe5b4;" type="checkbox" id="medium3" name="medium3" value="Cars">
+      <label  style = "color: #FDBD01;" for="medium3">Cars</label><br>
+      <input  onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)"  style="background-color: rgb(32,32,32); color: #ffe5b4;" type="checkbox" id="medium4" name="medium4" value="Buses">
+      <label  style = "color: #FDBD01;" for="medium4">Buses</label><br>
+       <input  onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)"  style="background-color: rgb(32,32,32); color: #ffe5b4;" type="checkbox" id="medium5" name="medium5" value="Bike">
+      <label  style = "color: #FDBD01;" for="medium5">Bike</label><br>
+    </div>
+
+    <div class= "form-group">
+      <label style = "color: #FDBD01;" for = "seeAnotherFieldGroup"> Which city would you like to travel from? (City, Country) <br> E.g. Milan, Italy </label> <br>
+      <input class = "form-control" onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)"  style="background-color: rgb(32,32,32); color: #ffe5b4;" type = "text" id = "city" name = "city" placeholder = "Enter the place you would like to travel to.">
+    </div>
+    <div class = "form-group">
+      <label style = "color: #FDBD01;" for = "seeAnotherFieldGroup"> Which city would you like to travel to? (City, Country) <br> E.g. Rome, Italy </label><br><br>
+      <input class = "form-control" onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)"  style="background-color: rgb(32,32,32); color: #ffe5b4;" type = "text" id = "city_to" name = "city_to" placeholder = "Enter the place you would like to travel to.">
+    </div>
+    <div class = "form-group">
+     <label style = "color: #FDBD01;" > What is the total budget for your entire trip? (No Dollar Sign or Commas) <br> E.g. 2500 </label><br><br>
+      <input  onfocus = "custom_color_focus(this)" onblur = "custom_color_blur(this)" style="background-color: rgb(32,32,32); color: #ffe5b4;"  type="text" class="form-control" id="part 1_price" placeholder="Enter the entire trip's budget." name = "first_part_price">
+     </div>
+    </div>
+    </div>
+    </div>
+    <button type="submit" class="btn btn-primary" id = "submit">Submit</button>
+</form>
+
+
+</body>
+
+<script>
+
+$('#attractions1').change(function(){
+  if($(this).val() == "City Tours") {
+    $('#custom').show();
+  } else {
+    $('#custom').hide();
+  }
+});
+$('#attractions1').trigger("change");
+
+  $("#seeAnotherField").change(function() {
+  if ($(this).val() == "yes") {
+    $('#otherFieldDiv').show();
+    $('#otherField').attr('required', '');
+    $('#otherField').attr('data-error', 'This field is required.');
+  } else {
+    $('#otherFieldDiv').hide();
+    $('#otherField').removeAttr('required');
+    $('#otherField').removeAttr('data-error');
+  }
+});
+$("#seeAnotherField").trigger("change");
+
+$("#num_people").change(function() {
+  if ($(this).val() > 0) {
+    $('#otherFieldGroupDiv').show();
+    $('#otherField1').attr('required', '');
+    $('#otherField1').attr('data-error', 'This field is required.');
+    $('#otherField2').attr('required', '');
+    $('#otherField2').attr('data-error', 'This field is required.');
+  } else {
+    $('#otherFieldGroupDiv').hide();
+    $('#otherField1').removeAttr('required');
+    $('#otherField1').removeAttr('data-error');
+    $('#otherField2').removeAttr('required');
+    $('#otherField2').removeAttr('data-error');
+  }
+});
+$("#num_people").trigger("change");
+
+function custom_color_focus(text) {
+  text.style.color = "#ffe5b4";
+}
+
+function custom_color_blur(text) {
+  text.style.color = "#FFFFFF";
+}
+
+</script>
+
+<style>
+form {
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: rgb(42,42,42);
+}
+
+.form-group, #popup1 {
+  margin-top: 5%;
+}
+
+input, select {
+  max-width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.totalquestions {
+  display:grid;
+  grid-template-rows: auto;
+  grid-template-columns: 50% 50%;
+  border: 9.5px solid rgb(52,52,52);
+  background-color:#14141a;
+}
+
+.first-seven {
+  display: table-cell;
+  grid-area: 1/1/2/2;
+  border: 8px solid rgb(52,52,52);
+  padding: 3%;
+
+}
+
+.secondbatch {
+  display: table-cell;
+  grid-area: 1/2/2/3;
+  border: 8px solid rgb(52,52,52);
+  padding: 3%;
+}
+
+#submit {
+      width: 35%;
+      margin: 1%;
+      font-size: 2em;
+      margin-bottom: 4%;
+    }
+
+</style>

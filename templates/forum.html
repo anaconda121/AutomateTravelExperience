@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Forum/Chat Room</title>
+</head>
+
+<div id = "screenpage">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
+<section class="flex center banner">
+        <header class="flex">
+            <nav class="options">
+              <a style = 'color: white; font-size: 1.25em;' class="link" href="/home">All About US</a>
+              <a style = 'color: white; font-size: 1.25em;' class="link" href="/algo">Airport Ticket Ratings</a>
+              <a style = 'color: white; font-size: 1.25em;' class = "link" href = "/planner">Trip Planner</a>
+              <a style = 'color: white; font-size: 1.25em;' class = "link" href = "/forum"> Forum </a>
+              <a style = 'color: white; font-size: 1.25em; margin-left: 7.5%;' class = "link" href = "/logout"> Logout </a>
+            </nav>
+        </header>
+    </section>
+<style>
+
+:root {
+  --primary: #000;
+  --secondary: #FDBD01;
+  --secondary-dark: rgb(200, 145, 0);
+}
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background: rgb(42,42,42);
+  font-family: 'Comfortaa', cursive;
+  color: #fff;
+  scroll-behavior: scroll;
+}
+
+section.banner {
+  background: linear-gradient(to bottom, transparent, var(--primary), var(--primary)), url("main-bg.jpg") no-repeat;
+  background-size: auto calc(100vw);
+  background-attachment: fixed;
+  min-height: 50vw;
+  text-align: center;
+  flex-direction: column;
+}
+section.banner h1 {
+  word-break: break-word;
+  font-size: 4em;
+  margin: 20vh 0 0.5em 0;
+  text-shadow: 0 0 0.5em var(--secondary);
+  color: var(--secondary);
+}
+section.banner > div {
+  max-width: 60%;
+  flex-direction: column;
+}
+section.banner > div p {
+  font-size: 1.1em;
+  margin: 0 0 2em 0;
+}
+
+header {
+  width: 100%;
+  flex-direction: column;
+}
+header nav.options {
+  padding: 1em;
+  text-align: center;
+}
+header nav.options a {
+  margin: 0.5em;
+  font-size: 1.1em;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+a.link {
+  display: inline-block;
+  font-family: 'Comfortaa', cursive;
+}
+a.link::after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateY(0.5em) translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: var(--secondary);
+    transition: width 0.3s ease;
+}
+a.link:hover::after  {
+    width: 100%;
+}
+
+h1.glow {
+  text-shadow: 0 0 1em #fff,
+         0 0 1em #fff;
+}
+
+
+  header {
+  width: 100%;
+  flex-direction: column;
+}
+header nav.options {
+  padding: 1em;
+  text-align: center;
+}
+header nav.options a {
+  margin: 0.5em;
+  font-size: 1.1em;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a.link {
+  display: inline-block;
+}
+a.link::after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 50%;
+  transform: translateY(0.5em) translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: var(--secondary);
+    transition: width 0.3s ease;
+}
+a.link:hover::after  {
+    width: 100%;
+}
+
+section.banner {
+    background: linear-gradient(to bottom, transparent, var(--primary), var(--primary)), url("main-bg.jpg") no-repeat;
+    background-size: auto calc(100vw);
+    background-attachment: fixed;
+    min-height: 50vw;
+    text-align: center;
+    flex-direction: column;
+}
+section.banner h1 {
+    word-break: break-word;
+    font-size: 4em;
+    margin: 20vh 0 0.5em 0;
+    text-shadow: 0 0 0.5em var(--secondary);
+    color: var(--secondary);
+}
+section.banner > div {
+    max-width: 60%;
+    flex-direction: column;
+}
+section.banner > div p {
+    font-size: 1.1em;
+    margin: 0 0 2em 0;
+}
+</style>
+</div>
+<body>
+  <h3 style='color: #ccc;font-size: 30px; padding: 1%;'>No messages yet..</h3>
+  <div class="message_holder">
+
+  <form style = 'margin-bottom: 2%;margin-top: 2%; margin-left: 1%;' id = "chat" action="" method="POST">
+    <input type="text" class="username" placeholder="User Name"/>
+    <input type="text" class="message" placeholder="Message"/>
+    <input id = "submit" type="submit"/> </div>
+  </form>
+
+  <style>
+    #chat input[type = "text"] {
+      color: rgb(0, 0, 0);
+    }
+
+    #chat input[type = "submit"] {
+      color: rgb(0, 0, 0);
+    }
+
+    #screenpage {
+      height:5%;
+    }
+
+    
+  </style>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+  <script type="text/javascript">
+    var socket = io.connect('http://' + document.domain + ':' + location.port);
+
+    socket.on( 'connect', function() {
+      socket.emit( 'my event', {
+        data: 'User Connected'
+      } )
+      var form = $( 'form' ).on( 'submit', function( e ) {
+        e.preventDefault()
+        let user_name = $( 'input.username' ).val()
+        let user_input = $( 'input.message' ).val()
+        socket.emit( 'my event', {
+          user_name : user_name,
+          message : user_input
+        } )
+        $( 'input.message' ).val( '' ).focus()
+      } )
+    } )
+    socket.on( 'my response', function( msg ) {
+      console.log( msg )
+      if( typeof msg.user_name !== 'undefined' ) {
+        $( 'h3' ).remove()
+        $( 'div.message_holder' ).append( '<div><b style="color: #FDBD01; size: 1.5em; padding: 1%">'+msg.user_name+'</b> '+msg.message+'</div>' )
+      }
+    })
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<body >
+  <head>
+    <!-- Importing JQuery Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"> </script> 
+  </head>
+
+    <!-- sign Up form -->
+    <div id = "signuphead">
+    <h1 id = "sign"> Sign Up </h1>
+    <div id = 'signup'>
+      <!-- sign Up form -->
+    <form method = "GET" id = "signupform" action="/signUp">
+      <input type = "text" class = "signup" name = "username" placeholder = "Username"><br>
+      <!-- part that tells users to sign up, they need email, can be used to recover password-->
+      <input type = "text" class = "signup" name = "mail" placeholder = "Email" style: > <br>
+      <input type = "password" class = "signup" name = "pwd" placeholder = "Password"><br>
+      <!-- password verification-->
+      <input type = "password" class = "signup" name = "pwd-repeat" placeholder = "Re-Enter Password"><br>
+      <button type = "submit" id = "signup2" name = "signup-submit">Sign Up</button>
+    </form>
+    </div>
+  </div>
+    
+
+    <h1 id = 'loginTag'> Login </h1>
+    <div id = 'loginDiv'>
+      <form method = 'POST' id = 'loginform' action = "/login">
+        <input type = "text" class = "login" name = 'Username' placeholder="Username/Email" id = 'u'><br>
+        <input type = 'password' class = 'login' name = 'Password' placeholder="Password" id = 'p'><br>
+        <button type = "submit" id = 'submit' name = 'login-submit'>Login </button>
+      </form>
+    </div>
+
+</body>
+
+    <script type='text/javascript'>
+      /* attach a submit handler to the form */
+      $("#signupform").submit(function(event) {
+  
+        /* stop form from submitting normally */
+        event.preventDefault();
+  
+        /* get the action attribute from the <form action=""> element */
+        var $form = $( this ),
+        url = $form.attr( 'action' );
+  
+        /* Send the data using post with element id name and name2*/
+        var posting = $.post( url, $('#signupform').serialize() );
+  
+        /* Alerts the results */
+        posting.done(function( data ) {
+          alert(data);
+          $("#signupform")[0].reset();
+        });
+      });
+  </script>
+
+  <script>
+
+
+  </script>
+
+
+    <style>
+    body{
+        background-image: url("https://cdn.pixabay.com/photo/2015/08/09/14/49/iceberg-881682_960_720.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    
+    }
+    
+    #signup{
+        /*use below movement code to bring signup up !! */
+        text-align:center;
+        display: inline-block;
+        border-style: solid;
+        border-color: blue;
+        margin: 0 auto;
+        padding: 0.1%;
+        background-color: rgb(227, 241, 240);
+        position: absolute;
+        left: 50%;
+        top: 71%;
+        transform: translate(-50%, -50%);
+        border-radius: 25px;
+        width:16%;
+        height: 36%;
+        padding-top: 1%;
+        padding-bottom:0.1%;
+    }
+
+    #sign {
+      position: absolute;
+      left: 45%;
+      top: 45%;
+
+    }
+
+    
+      #loginDiv {
+        /*use below movement code to bring signup up !! */
+        text-align:center;
+        display: inline-block;
+        border-style: solid;
+        border-color: blue;
+        margin: 0 auto;
+        padding: 0.1%;
+        background-color: rgb(227, 241, 240);
+        position: absolute;
+        left: 50%;
+        top: 27.5%;
+        transform: translate(-50%, -50%);
+        border-radius: 25px;
+        width:16%;
+        height: 22%;
+        padding-top: 1%;
+        padding-bottom:0.1%;
+      }
+      
+      h1{
+        text-align: center;
+        margin: 12px;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        color: white;
+        position: absolute;
+        left: 15%;
+        top: 28%;
+      }
+
+      #loginTag {
+        text-align: center;
+        margin: 12px;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        color: white;
+        position: absolute;
+        left: 46.25%;
+        top: 8%;
+      }
+      
+      .signup{
+        width: 80%;
+        height: 12%;
+        margin: 3%;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+      }
+
+      .login {
+        width: 80%;
+        height: 17%;
+        margin: 3%;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+      }
+      
+      #signup2 {
+        /*uses pixels, maybe change to percentage later */
+        margin-top: 15px;
+        padding: 10px;
+        background-color: rgb(134, 181, 235);
+        font-size:1em;
+        border-radius: 10px;
+        width:80%;
+      }
+
+      #submit {
+        /*uses pixels, maybe change to percentage later */
+        margin-top: 15px;
+        padding: 10px;
+        background-color: rgb(134, 181, 235);
+        font-size:1em;
+        border-radius: 10px;
+        width:80%;
+      }
+
+      #form ::placeholder {
+        font-size: 1.25em;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        padding: 5px;
+      }
+   
+    </style>

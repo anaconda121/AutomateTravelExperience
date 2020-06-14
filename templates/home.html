@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Automate the Travel Experience!</title>
+	<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ7T97eCapM6z0Qt-v-j5QkTlLx3D1bZ8zzCnhdvq3Ikgt0KMPq&usqp=CAU" />
+	
+	<!-- Styles -->
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
+
+	<!-- Preload -->
+	
+	<!-- Scripts -->
+</head>
+<body>
+	<section class="flex center banner">
+		<header class="flex">
+			<nav class="options">
+				<a class="link" href="/home">All About US</a>
+     			<a class="link" href="/algo">Airport Ticket Ratings</a>
+        		<a class = "link" href = "/planner">Trip Planner</a>
+        		<a class = "link" href = "/forum"> Forum </a>
+				<a style = "margin-left: 7.5%;"class = "link" href = "/logout"> Logout </a>
+			</nav>
+			<div class="flex">
+
+			</div>
+		</header>
+		<h1>Better Planning.<br>Better Doing.</h1>
+		<div class="flex center">
+			<p style = "color: white;">Our world has changed because of the COVID-19 Pandemic. This web application is here to help humanity plan and enjoy a safe, economic, and fascinating travel experience.</p>
+			<div class="flex buttons">
+				<button  class="secondary btn set"><a  style = "color: white; text-decoration: none;" href = '/algo' > Check your Airport Ticket </a></button>
+				<button class="secondary btn set" ><a style = "color: white; text-decoration: none;" href = '/planner' > Plan your Vacation </a></button>
+			</div>
+		</div>
+	</section>
+	<main>
+		<div class="flex text-container">
+			<p style = "color: white;">Due to the COVID-19 Pandemic, the stocks of airlines have dropped over 35%. There is the potential of 75 million jobs lost and 2.1 trillion dollars lost in revenue. The Travel Industry is one of the biggest and most useful parts of our world. Through travel, we get to experience the world and gain memories that we will never forget. Humanity needs the travel industry to get back on its feet, and fast.</p>
+		</div>
+		<div class="flex card-container">
+			<div class="flex card" style="background-color: rgb(32,32,32);">
+				<i class="fas fa-battery-full"></i>
+				<p  style = "color: white;">One of the features of this web app is the ticket checker. Users can enter the basic details of their ticket and our machine learning & data modeling alogrithm will evaluate the ticket based off factors such as annual traffic, cleanliness, Food, onboard service and others. If our ticket is not deemed good by our algorithm, our web scraping application will scrape the internet and look for better ticket options based on your needs. All of our analysis is backed with datasets from sources such as Johns Hopkins University. </p>
+			</div>
+			<div class="flex card" style="background-color: rgb(32,32,32);">
+				<i class="fas fa-server"></i>
+				<p style = "color: white;">Another feature of this web app is the automated vacation planner. Users can enter the basic details of what kind of vacation they are looking to plan and our algorithm will open windows with potential options for your vacation. We have a web scraper that scrapes the web and looks for vacations that meet the current standard of hygiene that is required for vacations post-pandemic.</p>
+			</div>
+			<div class="flex card" style="background-color: rgb(32,32,32);">
+				<i class="fas fa-upload"></i>
+				<p style = "color: white;">Our third main feature of the webpage is the COVID-statistics page. Using Javascript apis, we have put together so statistics so our users can understand the impact that COVID-19 has had on our world. We have graphs that are customized and bring up statistics for your country based off your location, and there is a case study which includes a COVID-19 predictor alogrithm.</p>
+			</div>
+		</div>
+		<div class="flex container left">
+			<img src="{{url_for('static', filename = 'homepage/ticket.jpg')}}" />
+			<div>
+				<h1 class="glow" style = "color: #FDBD01;">Technology: Ticket Checker</h1>
+				<p style = "color: white;">After gathering the datasets required, I used the Pandas library to read the datasets and format them for analysis. The Numpy library helped store the data to pass it along to our algorithm. In order to render the data in an aesthetic way, I used the Plotly, Seaborn, Matplotlib, and Chart_Studio Modules. For the algorithm itself, I used Geopy and the Geopandas libraries to calculate trip distances; Selenium, BeautifulSoup, and Chrome WebDriver modules to scrape the internet; and the Pandas and Numpy modules to evaluate a user's ticket. </p>
+			</div>
+		</div>
+		<div class="flex container right">
+			<img src="{{url_for('static', filename = 'homepage/vacation.png')}}" />
+			<div>
+				<h1  style = "color: #FDBD01;" class="glow">Technology: Vacation Planner</h1>
+				<p style = "color: white;">I used Selenium, BeautifulSoup, and Chrome WebDriver to read the user input and scrape the internet for options. With a Flask backend system, I was able to process the requests from the user in the most intuitive way. Selenium ActionChains were helpful for advanced scraping features that helped process the user's customized inputs regarding their trip. In addition, I utilized Selenium ExceptedConditions to fine tune my algorithm and ensure that the bot does not search and scrape websites prematurely (it will not return any information from a loading page). </p>
+			</div>
+		</div>
+		<div class="flex container left">
+			<img src="{{url_for('static', filename = 'homepage/thanks2.jpg')}}" />
+			<div>
+				<h1 class="glow" style = "color: #FDBD01;">Thank you!</h1>
+				<p style = "color: white;">Thank you to the organization and hosters of this hackathon and my wonderful mentors. The organizers have done such a great job with running the hackathon, hosting exciting webinars, and giving participants such superb mentors who are always avaiable to get feedback and bounce suggestions off of. Throughout this hackathon, I have grown -- programming-wise and otherwise. </p>
+			</div>
+		</div>
+		<div class="flex column center">
+			<h1 class="glow margin-center" style = "color: #FDBD01;">Start Today.</h1>
+		</div>
+	</main>
+	<footer class="flex" style="background-color: rgb(32,32,32);">
+
+		<div class="icons">
+			<a href="https://github.com/TanishT"><i class='fab fa-github'></i></a>
+			<a href="https://www.instagram.com/tanishtyagi23/"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.facebook.com/tanish.tyagi.779"><i class="fab fa-facebook"></i></a>
+		</div>
+	</footer>
+  <div class="copyright">
+    <p>© 2020 @TanishTyagi</p>
+  </div>
+</body>
+
+<style>
+	:root {
+	--primary: #000;
+	--secondary: #FDBD01;
+	--secondary-dark: rgb(200, 145, 0);
+}
+html, body {
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+	background: rgb(42,42,42);
+	font-family: 'Comfortaa', cursive;
+	color: #fff;
+	scroll-behavior: scroll;
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+::selection {
+	color: #000;
+	background-color: #fff;
+}
+.flex {
+	display: flex;
+}
+.flex.center {
+	align-items: center;
+}
+.flex.column{
+	flex-direction: column;
+}
+.flex.right {
+	flex-direction: row-reverse;
+}
+.flex.left {
+	flex-direction: row;
+}
+.flex.buttons {
+	align-self: center;
+	width: 60%;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.flex.buttons .btn {
+	margin: 0.5em;
+}
+.margin-center{
+	margin: 0 auto 1em auto;
+}
+section.banner {
+	background: linear-gradient(to bottom, transparent, var(--primary), var(--primary)), url("main-bg.jpg") no-repeat;
+	background-size: auto calc(100vw);
+	background-attachment: fixed;
+	min-height: 50vw;
+	text-align: center;
+	flex-direction: column;
+}
+section.banner h1 {
+	word-break: break-word;
+	font-size: 4em;
+	margin: 20vh 0 0.5em 0;
+	text-shadow: 0 0 0.5em var(--secondary);
+	color: var(--secondary);
+}
+section.banner > div {
+	max-width: 60%;
+	flex-direction: column;
+}
+section.banner > div p {
+	font-size: 1.1em;
+	margin: 0 0 2em 0;
+}
+.btn {
+	border-radius: 2px;
+	white-space: nowrap;
+	padding: 0.5em;
+	font-size: 1.1em;
+	outline: none;
+	cursor: pointer;
+	user-select: none;
+	transition: background 0.3s ease, color 0.3s ease;
+}
+.btn.classic {
+	border: 2px solid var(--secondary);
+	background: var(--secondary);
+	color: #fff;
+}
+.btn.classic:hover {
+	background: var(--secondary-dark);
+}
+.btn.secondary {
+	border: 2px solid var(--secondary);
+	background: transparent;
+	color: var(--secondary);
+}
+.btn.secondary:hover {
+	color: #fff;
+	background: var(--secondary);
+}
+.btn.set {
+	min-width: 8em;
+}
+header {
+	width: 100%;
+	flex-direction: column;
+}
+header nav.options {
+	padding: 1em;
+	text-align: center;
+}
+header nav.options a {
+	margin: 0.5em;
+  font-size: 1.1em;
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+}
+a.link {
+	display: inline-block;
+}
+a.link::after {
+	content: "";
+	display: block;
+	position: relative;
+	left: 50%;
+	transform: translateY(0.5em) translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: var(--secondary);
+    transition: width 0.3s ease;
+}
+a.link:hover::after  {
+    width: 100%;
+}
+main {
+	padding: 1em 7vw;
+}
+.text-container {
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	
+}
+.text-container p,
+.card-container p,
+.container p {
+	font-size: 1.1em;
+	margin: 1em 0;
+}
+.card-container {
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 0.5em
+}
+.card-container .card {
+	flex: 1 0 calc((100% / 3) - 1em);
+	margin: 0.5em;
+	border-radius: 4px;
+	background: #000;
+	border: 2px solid #212121;
+	flex-direction: column;
+	padding: 0.5em;
+	justify-content: center;
+	text-align: center;
+	transition: transform 0.3s ease, border 0.3s ease;
+}
+.card-container .card i {
+	font-size: 2em;
+	margin: 0.5em 0 0 0;
+}
+.card-container .card:hover {
+	transform: scale(1.0125);
+	border: 2px solid var(--secondary-dark);
+}
+.container {
+	justify-content: space-between;
+	padding: 0.5em;
+}
+.container img {
+	border-radius: 50%;
+	object-fit: cover;
+	margin: 0.5em;
+	height: 300px;
+	width: 300px;
+	flex: 0 0 300px;
+	user-select: none;
+	transition: transform 0.3s ease;
+}
+.container img:hover {
+	transform: translateY(-0.5em);
+}
+.container > div {
+	padding: 0.5em;
+}
+h1.glow {
+	text-shadow: 0 0 1em #fff,
+				 0 0 1em #fff;
+}
+.container.right > div {
+	text-align: right;
+	margin: 0 0.5em 0 0;
+}
+.container.left > div {
+	margin: 0 0 0 0.5em;
+}
+footer{
+	margin: 1.5em 0 0 0;
+	background: #000;
+	width: 100%;
+	flex-direction: column;
+	align-items: stretch;
+	padding: 1em 0.5em;
+}
+footer > div {
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+}
+footer > div > div {
+	margin: 0.5em;
+	display: flex;
+	flex-direction: column;
+}
+footer h2 {
+	margin: 0 0 0.5em 0;
+	color: var(--secondary);
+}
+footer a {
+	color: var(--secondary);
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+footer a:hover {
+	color: var(--secondary-dark);
+}
+footer .icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: nowrap;
+	padding: 0.5em;
+}
+footer .icons a {
+	margin: 0.5em;
+	font-size: 2em;
+}
+.copyright {
+	width: 100%;
+	text-align: center;
+	user-select: none;
+	padding: 1em;
+}
+.copyright p {
+ 	margin: 0;
+}
+::-webkit-scrollbar {
+  width: 0.3em; 
+	background: #212121;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 2px;
+	background: var(--secondary);
+}
+@media only screen and (max-width: 768px) {
+	.card-container .card {
+		flex-basis: calc(100% - 1em);
+	}
+  .container{
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .container img{
+    margin: 0.5em;
+  }
+  .left > div, 
+  .right > div{
+    margin: 0;
+    text-align: center !important;
+  }
+}
+</style>
+
+<script>
+	function init_movement(){
+		let background = document.querySelector('section')
+		let x, y
+		document.onmousemove = (e) => {
+			if (x && y) {
+				background.style.backgroundPositionX = -x + "px";
+	  			background.style.backgroundPositionY = -y + "px";
+				
+			}
+			x = e.clientX / 5
+			y = e.clientY / 5
+		}	
+	}
+	const el = document.querySelector("#module");
+
+	init_movement()
+</script>
+
+
+</html>
