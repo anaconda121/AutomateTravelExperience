@@ -1,0 +1,31 @@
+rank,airport,location,code_iata_icao,total_passengers,change
+1,London Heathrow Airport,"Hillingdon, Greater London, United Kingdom",LHR/EGLL,66689466,0.035
+2,Dubai International Airport,"Garhoud, Dubai, United Arab Emirates",DXB/OMDB,65872250,0.153
+3,Hong Kong International Airport,"Chek Lap Kok, Lantau Island, Hong Kong",HKG/VHHH,59294439,0.065
+4,Paris Charles de Gaulle Airport,"Roissy-en-France, Val d'Oise, Île-de-France, France",CDG/LFPG,56767748,0.01
+5,Singapore Changi Airport,"Changi, East Region, Singapore",SIN/WSSS,52775360,0.057
+6,Amsterdam Airport Schiphol,"Haarlemmermeer, North Holland, Netherlands",AMS/EHAM,52527699,0.03
+7,Frankfurt Airport,"Flughafen, Frankfurt, Hesse, Germany",FRA/EDDF,51315550,0.011
+8,Suvarnabhumi Airport,"Racha Thewa, Bang Phli, Samut Prakan, Greater Bangkok, Thailand",BKK/VTBS,41302852,0.049
+9,Incheon International Airport,"Jung-gu, Incheon, Sudogwon, South Korea",ICN/RKSI,40785953,0.064
+10,Atatürk International Airport,"Yeşilköy, Bakırköy, Istanbul, Turkey",IST/LTBA,33955798,0.142
+11,Kuala Lumpur International Airport,"Sepang, Selangor, Malaysia",KUL/WMKK,32605356,0.181
+12,London Gatwick Airport,"Crawley, West Sussex, United Kingdom",LGW/EGKK,31657805,0.042
+13,Narita International Airport,"Narita, Chiba, Kantō, Honshū, Japan",NRT/RJAA,30516135,0.03
+14,Munich Airport,"Oberding/Hallbergmoos/Marzling, Erding/Freising, Bavaria, Germany",MUC/EDDM,29216808,0.021
+15,Taoyuan International Airport,"Dayuan, Taoyuan, Taiwan, Taiwan",TPE/RCTP,28608274,0.102
+16,Madrid-Barajas Airport,"Madrid, Comunidad de Madrid, Spain",MAD/LEMD,27711197,0.095
+17,John F. Kennedy International Airport,"Queens, New York City, New York, United States",JFK/KJFK,26530698,0.059
+18,Leonardo da Vinci–Fiumicino Airport,"Fiumicino, Rome, Italy",FCO/LIRF,25069617,0.006
+19,Barcelona–El Prat Airport,"El Prat de Llobregat, Barcelona, Catalonia, Spain",BCN/LEBL,25003256,0.058
+20,Zurich Airport,"Rümlang/Oberglatt, Bülach/Dielsdorf, Zürich, Switzerland",ZRH/LSZH,24227178,0.004
+21,Doha International Airport,"Doha, Qatar",DOH/OTBD,23266396,0.099
+22,Copenhagen Airport,"Tårnby, Hovedstaden, Denmark",CPH/EKCH,22096855,0.037
+23,Toronto Pearson International Airport,"Mississauga, Ontario, Canada",YYZ/CYYZ,21638571,0.018
+24,Antalya Airport,"Antalya, Turkey",AYT/LTAI,21525679,0.068
+25,Vienna International Airport,"Vienna, Austria",VIE/LOWW,21357730,0.007
+26,Miami International Airport,"Miami-Dade County, Florida, United States",MIA/KMIA,20201626,0.043
+27,Dublin Airport,"Dublin, County Dublin, Leinster, Ireland",DUB/EIDW,20092659,0.056
+28,Brussels Airport,"Zaventem, Flemish Brabant, Flanders, Belgium",BRU/EBBR,18932137,0.008
+29,Sheremetyevo International Airport,"Khimki, Moscow Oblast, Russia",SVO/UUEE,18581906,0.083
+30,Manchester Airport,"Manchester, England, United Kingdom",MAN/EGCC,18432744,0.062

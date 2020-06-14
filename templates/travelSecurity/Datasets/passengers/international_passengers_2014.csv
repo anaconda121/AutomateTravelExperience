@@ -1,0 +1,32 @@
+rank,airport,location,code_iata_icao,total_passengers,change
+1,Dubai International Airport,"Garhoud, Dubai, United Arab Emirates",DXB/OMDB,69954392,0.062
+2,London Heathrow Airport,"Hillingdon, Greater London, United Kingdom",LHR/EGLL,68091095,0.019
+3,Hong Kong International Airport,"Chep Lap Kok, Lantau Island, Hong Kong",HKG/VHHH,62929420,0.062
+4,Paris-Charles de Gaulle Airport,"Roissy-en-France, Val d'Oise, Île-de-France, France",CDG/LFPG,58623111,0.033
+5,Amsterdam Airport Schiphol,"Haarlemmermeer, North Holland, Netherlands",AMS/EHAM,54940534,0.046
+6,Singapore Changi Airport,"Changi, East Region, Singapore",SIN/WSSS,54093070,0.01
+7,Frankfurt Airport,"Flughafen, Frankfurt, Hesse, Germany",FRA/EDDF,52713013,0.027
+8,Incheon International Airport,"Jung-gu, Incheon, Sudogwon, South Korea",ICN/RKSI,44906813,0.101
+9,Atatürk International Airport,"Yeşilköy, Bakırköy, Istanbul, Turkey",IST/LTBA,38037302,0.116
+10,Suvarnabhumi Airport,"Racha Thewa, Bang Phli, Samut Prakan, Greater Bangkok, Thailand",BKK/VTBS,37183099,0.1
+11,Taoyuan International Airport,"Dayuan, Taoyuan, Taiwan",TPE/RCTP,35402285,0.113
+12,London Gatwick Airport,"Crawley, West Sussex, United Kingdom",LGW/EGKK,34438531,0.088
+13,Kuala Lumpur International Airport,"Sepang, Selangor, Malaysia",KUL/WMKK,34431775,0.056
+14,Munich Airport,"Oberding/Hallbergmoos/Marzling, Erding/Freising, Bavaria, Germany",MUC/EDDM,30269007,0.036
+15,Narita International Airport,"Narita, Chiba, Kantō, Honshū, Japan",NRT/RJAA,29625075,0.029
+16,Madrid-Barajas Airport,"Madrid, Comunidad de Madrid, Spain",MAD/LEMD,29618803,0.069
+17,John F. Kennedy International Airport,"Queens, New York City, New York, United States",JFK/KJFK,28471427,0.073
+18,Barcelona–El Prat Airport,"El Prat de Llobregat, Barcelona, Catalonia, Spain",BCN/LEBL,27246041,0.09
+19,Leonardo da Vinci–Fiumicino Airport,"Fiumicino, Rome, Italy",FCO/LIRF,26840909,0.071
+20,Hamad International Airport,"Doha, Qatar",DOH/OTBD,26356392,0.133
+21,Zurich Airport,"Rümlang/Oberglatt, Bülach/Dielsdorf, Zürich, Switzerland",ZRH/LSZH,24836044,0.025
+22,Copenhagen Airport,"Tårnby, Hovedstaden, Denmark",CPH/EKCH,23610452,0.069
+23,Toronto Pearson International Airport,"Mississauga, Ontario, Canada",YYZ/CYYZ,23279850,0.072
+24,Antalya Airport,"Antalya, Turkey",AYT/LTAI,22035355,0.022
+25,Vienna International Airport,"Vienna, Austria",VIE/LOWW,21831400,0.022
+26,Brussels Airport,"Zaventem, Flemish Brabant, Flanders, Belgium",BRU/EBBR,21718462,0.147
+27,Dublin Airport,"Dublin, County Dublin, Leinster, Ireland",DUB/EIDW,21635155,0.077
+28,Miami International Airport,"Miami-Dade County, Florida, United States",MIA/KMIA,20096541,0.005
+29,Shanghai Pudong International Airport,"Pudong, Shanghai, People's Republic of China",PVG/ZSPD,19954392,0.094
+30,Abu Dhabi International Airport,"Abu Dhabi, United Arab Emirates",AUH/OMAA,19765240,0.102
+31,Manchester Airport,"Manchester, Greater Manchester, United Kingdom",MAN/EGCC,19484972,0.057

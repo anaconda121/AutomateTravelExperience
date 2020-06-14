@@ -1,0 +1,54 @@
+1. score all airports in international data
+
+criteria for score:
+	cleanliness (demographic of bathrooms across airport) (DONE) scale of 1 - 30 
+	yearly travel traffic, how big airport is (DONE)
+	how bad area has been affected by covid (DONE)
+	tmeliness of airport  (DONE)
+	overall airplane services (food, distance, baggage, etc) (DONE) scale of 1 - 20
+	prices for airport tickets (DONE)
+
+
+
+2. AI Algo
+(PART A DONE)
+a. User enters data and algo tells if the airport ticket is good. If ticket is bad, algo will suggest other airlines they can use in the area
+
+Q's for user:
+	address
+	what airline are they using
+	where they are flying from
+	where they are going to
+	price of flight ticket
+	number of people going with them on the flight + age
+
+b. User enters data and algo ouputs a list of hotels and attractions they can see (iternary planned out for them)
+(TODO) - UPDATE DATE FORMAT FOR HTML FORM FOR TRIP PLANNER
+Q's for User:
+	where are they going (Region, country, continent)
+	how long is their trip
+	how many people are going with them on the trip
+	purpose of the trip (tourism, family, etc)
+	flight airline they are using (for going and coming)
+	price range
+
+How to do part b:
+1. identify websites i can scrape off of
+	*LIVING accomodations - triavgo for hotels 
+
+(DONE)
+How to do part a:
+1. program will take values entered by user and give a score for airport
+	a. generating score for ticket
+		* if domestic or international - (DONE)
+		* age of people traveling with you, number of people traveling with you, relationship with people traveling with you (DO LATER - HARD RN)
+		* price per ticket (DONE)
+		* distance of flight, how long will it take (include delays based on airport ??) (DONE BIG POGGGGG)
+		* how far airport is from address (DONE)
+
+2. if score is below a certain standard, airport ticket will be deemed bad (DONE)
+3. webscrape to try to find alternative options that meet criteria for good ticket
+	a. scrape site that has info we need
+		* needed info: flight starting spot, flight landing spot, distance of flight (would be nice to have), 
+		delays / layovers, flight time (hours, would be nice to have) 
+		* need 

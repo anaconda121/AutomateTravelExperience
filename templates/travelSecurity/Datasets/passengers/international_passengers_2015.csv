@@ -1,0 +1,51 @@
+rank,airport,location,code_iata_icao,total_passengers,change,country
+1,Dubai International Airport,Dubai,DXB,77453466,10.72,United Arab Emirates
+2,Heathrow Airport,London,LHR,69816491,2.53,United Kingdom
+3,Hong Kong International Airport,Hong Kong,HKG,68071282,8.22,Hong Kong
+4,Aéroport de Paris-Charles de Gaulle,Paris,CDG,60366933,2.97,France
+5,Amsterdam Airport,Amsterdam,AMS,58245545,6.02,Netherlands
+6,Singapore Changi Airport,Singapore,SIN,54836000,2.9,China
+7,Flughafen Frankfurt/Main,Frankfurt,FRA,53994154,2.43,France
+8,Incheon International Airport,Incheon,ICN,48720319,8.49,Korea South
+9,Suvarnabhumi International Airport,Bangkok,BKK,43251807,16.32,Thailand
+10,Atatürk International Airport,Istanbul,IST,41998251,10.08,Turkey
+11,Taiwan Taoyuan International Airport,Taipei,TPE,38104007,7.63,Taiwan
+12,Gatwick Airport,London,LGW,36663907,6.39,United Kingdom
+13,KL International Airport,Kuala Lumpur,KUL,34438229,0,Malaysia
+14,Aeropuerto de Adolfo Suárez Madrid-Barajas,Madrid,MAD,33765583,14.08,Spain
+15,Munich Airport,Munich,MUC,31313329,3.45,Germany
+16,Hamad International Airport,Doha,DOH,30906066,17.26,Qatar
+17,Narita International Airport,Tokyo,NRT,30547564,3.23,Japan
+18,John F. Kennedy International Airport,New York NY,JFK,30020301,6.47,United States
+19,Aeropuerto de Barcelona-El Prat,Barcelona,BCN,29067531,6.73,Spain
+20,Aeroporto di Roma-Fiumicino,Rome,FCO,28280267,5.36,Italy
+21,Flughafen Zürich,Zurich,ZRH,25634998,3.1,Switzerland
+22,Toronto Pearson International Airport,Toronto ON,YYZ,25177558,7.69,CanadaTrue
+23,Dublin Airport,Dublin,DUB,24869405,14.94,Ireland
+24,Copenhagen Airport,Copenhagen,CPH,24639122,4.36,Denmark
+25,Pudong International Airport,Shanghai,PVG,23426603,18.29,China
+26,Brussels Airport,Brussels,BRU,23225980,6.94,Belgium
+27,Abu Dhabi International Airport,Abu Dhabi,AUH,22834963,18.6,United Arab Emirates
+28,Vienna International Airport,Vienna,VIE,22147149,1.45,Austria
+29,Miami International Airport,Miami FL,MIA,21206557,5.52,United States
+30,Antalya International Airport,Antalya,AYT,20863040,-5.48,Turkey
+31,Stansted Airport,London,STN,20768053,10.56,United Kingdom
+32,Manchester Airport,Manchester,MAN,20724999,6.33,United Kingdom
+33,Los Angeles International Airport,Los Angeles CA,LAX,20000009,8.59,United States
+34,Aéroport de Paris-Orly,Paris,ORY,18818663,4.97,France
+35,Beijing Capital International Airport,Beijing,PEK,18601898,10.48,China
+36,Aeropuerto de Palma de Mallorca,Palma De Mallorca,PMI,18107070,0.59,Spain
+37,King Abulaziz International Airport,Jeddah,JED,18083745,0.28,Saudi Arabia
+38,Stockholm-Arlanda Airport,Stockholm,ARN,18080833,4.16,Sweden
+39,Düsseldorf International Airport,Düsseldorf,DUS,18060323,3.83,Germany
+40,Sheremetyevo International Airport,Moscow,SVO,17781134,-3.76,Russia
+41,Lisbon Airport,Lisbon,LIS,17614499,9.53,Portugal
+42,Ninoy Aquino International Airport,Manila,MNL,17168171,6.82,Philippines
+43,Kansai International Airport,Osaka,KIX,16253996,24.52,Japan
+44,Milano Malpensa,Milan,MXP,15908074,0.68,Italy
+45,Tel Aviv/Ben Gurion International Airport,Tel-Aviv,TLV,15674250,9.86,Israel
+46,Genève Aéroport,Geneva,GVA,15116493,3.96,Switzerland
+47,Moscow Domodedovo Airport,Moscow,DME,13887161,-21.42,Russia
+48,Helsinki-Vantaa Airport,Helsinki,HEL,13826868,2.89,Finland
+49,Sydney International Airport,Sydney,SYD,13715091,4.3,Australian Capital Territory
+50,Indira Gandhi International Airport,New Delhi,DEL,13709793,4.36,India

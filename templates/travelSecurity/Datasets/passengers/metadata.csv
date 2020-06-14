@@ -1,0 +1,22 @@
+name_shortname,busiest_airports_by_passengers
+Theme,Transport
+Sub-theme,Air Travel
+Title,Largest global airports by passenger traffic
+Description,Top 30 world's busiest airports by international passenger traffic and top 50 world's busiest airports by passenger traffic.
+Subject,Transport
+Subject.keyword,"airports, flights, passengers, planes, visitors"
+Publisher,Airports Council International
+Date.available,2013-2016
+Creator,Airports Council International
+Date.created,
+Coverage.spatial,Airport
+Coverage.temporal,Annual
+Type,
+Language,
+Rights,ACI
+More info,http://www.aci.aero/Data-Centre/Monthly-Traffic-Data/International-Passenger-Rankings/Monthly
+Download from,
+Measure,Numbers and percentages
+Warnings/Notes,"Data are measured by total passengers (data from Airports Council International (ACI), defined as passengers enplaned plus passengers deplaned plus direct-transit passengers. 
+Hartsfield-Jackson International Airport in Atlanta has been the world's busiest airport every year since 2000; with all airports combined London has the world's busiest city airport system by passenger count. In 2013 there were 129 million passengers at London airports."
+Next release,Jul-20

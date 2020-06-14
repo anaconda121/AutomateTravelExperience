@@ -1,0 +1,23 @@
+'''trivago '''
+https://www.trivago.com/?aDateRange%5Barr%5D=2020-06-21&aDateRange%5Bdep%5D=2020-06-22&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=26352%2F200&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=16093&address=&addressGeoCode=&offset=0&ra=&overlayMode=
+
+https://www.trivago.com/?aDateRange%5Barr%5D=2020-06-21&aDateRange%5Bdep%5D=2020-06-22&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=13229&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=26352%2F200&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=16093&address=&addressGeoCode=&offset=0&ra=&overlayMode=
+
+https://www.trivago.com/?aDateRange%5Barr%5D=2020-06-21&aDateRange%5Bdep%5D=2020-06-22&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=25084%2F200&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=16093&address=&addressGeoCode=&offset=0&ra=&overlayMode=
+
+https://www.trivago.com/?aDateRange%5Barr%5D=2020-06-21&aDateRange%5Bdep%5D=2020-06-22&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=49018%2F200&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=16093&address=&addressGeoCode=&offset=0&ra=&overlayMode=
+
+https://www.trivago.com/?aDateRange%5Barr%5D=2020-06-21&aDateRange%5Bdep%5D=2020-06-22&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=%2F200&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=16093&address=&addressGeoCode=&offset=0&ra=&overlayMode=
+
+https://www.trivago.com/?aDateRange%5Barr%5D=2020-06-21&aDateRange%5Bdep%5D=2020-06-22&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=7&aRooms%5B0%5D%5Badults%5D=2&cpt2=83%2F200&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=16093&address=&addressGeoCode=&offset=0&ra=&overlayMode=
+
+https://www.trivago.com/?aDateRange%5Barr%5D=2020-6-21&aDateRange%5Bdep%5D=2020-06-22&aPriceRange%5Bfrom%5D=0&aPriceRange%5Bto%5D=0&iRoomType=1&aRooms%5B0%5D%5Badults%5D=2&cpt2=%2F200&hasList=1&hasMap=1&bIsSeoPage=0&sortingId=1&slideoutsPageItemId=&iGeoDistanceLimit=16093&address=&addressGeoCode=&offset=0&ra=&overlayMode=
+
+'''airbnb'''
+https://www.airbnb.com/s/Milan/homes?tab_id=all_tab&refinement_paths%5B%5D=%2Fhomes&adults=1&checkin=2020-06-10&checkout=2020-06-12&query=Milan%2C%20&place_id=ChIJlduiODLChkcRUH5mLgJ4BgM&source=structured_search_input_header&search_type=search_query
+
+https://www.airbnb.com/s/Milan/homes?tab_id=all_tab&refinement_paths%5B%5D=%2Fhomes&checkin=2020-06-19&checkout=2020-06-27&children=0&adults=1&source=structured_search_input_header&search_type=search_query
+
+'city tours --> walking'
+
+https://www.contexttravel.com/cities/milan/tours?utf8=%E2%9C%93&start_date=2020-06-11&end_date=2020-06-25&pax=2&interest_id=&tour_type=&button=
