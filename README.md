@@ -1,3 +1,3 @@
-# for travel scrum hackathon
-project was a finalist out of over 250 projects
+# Automate Travel Experience - An AI-powered Vacation Planner
+Top 30 Projects out of 250 for Global Travel Scrum Hackathon
 
